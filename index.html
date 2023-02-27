@@ -1,110 +1,115 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
-    <title>3mais</title>
-    <meta name="description" content="3mais" />
+  <title>3mais</title>
+  <meta name="description" content="3mais" />
+  <meta name="keywords" content="3mais, comunicação, inovação, resultados, marca" />
+  <meta name="author" content="Nome do Autor" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEU_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'GA_MEU_ID');
-    </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEU_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEU_ID');
+  </script>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </head>
 
 <body>
-    <div class="hero">
-        <iframe src="https://www.youtube.com/embed/2aLWjjZHYUU?controls=0&amp;showinfo=0&amp;rel=0" frameborder="0"
-            allowfullscreen title="Vídeo promocional da empresa"></iframe>
-        <div class="icon-container">
-            <i class="icon-scroll"></i>
-        </div>
+  <div class="hero">
+    <iframe src="https://www.youtube.com/embed/2aLWjjZHYUU?controls=0&amp;showinfo=0&amp;rel=0" frameborder="0"
+      allowfullscreen title="Vídeo promocional da empresa"></iframe>
+    <div class="icon-container">
+      <i class="icon-scroll"></i>
     </div>
+  </div>
 
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/logo.svg" alt="Logotipo da empresa 3mais" />
-                </div>
-                <div class="about-text">
-                    <h2>Somos a 3mais</h2>
-                    <p>
-                        Nascemos da vontade de se criar uma comunicação única focada em
-                        dados, colaboração, resultados e empatia.
-                    </p>
-                    <p>
-                        Acreditamos na inovação como uma forma de gerar impacto para o
-                        mundo, valorizando as histórias e transformações de cada marca.
-                    </p>
-                    <p>
-                        Sabemos que para se fazer mais, é preciso ir além de ideias,
-                        apresentações e anúncios. É preciso ser mais.
-                    </p>
-                    <h3>3mais. Mais relevância e mais legado.</h3>
-                </div>
-            </div>
+  <section class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="img/logo.svg" alt="Logotipo da empresa 3mais" />
         </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <form action="#apirdstation" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira seu Nome" required aria-label="Nome" />
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Ex: jonh@email.com" required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    title="Por favor, insira um endereço de e-mail válido. Ex: nome@dominio.com" />
-
-                <label for="celular">Celular:</label>
-                <input type="tel" id="celular" name="celular" placeholder="DDD + Telefone" required
-                    onkeyup="formatarCelular(this)" />
-
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" placeholder="Insira o Assunto" required />
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva o texto" required></textarea>
-
-                <!-- Campos ocultos para identificação do formulário e autenticação -->
-                <input type="hidden" name="token_rdstation" value="SUA_CHAVE_PUBLICA" />
-                <input type="hidden" name="identificador" value="IDENTIFICADOR_DO_FORMULARIO" />
-
-                <button type="submit" aria-label="Enviar formulário de contato">
-                    Enviar
-                </button>
-            </form>
+        <div class="about-text">
+          <h2>Somos a 3mais</h2>
+          <p>
+            Nascemos da vontade de se criar uma comunicação única focada em
+            dados, colaboração, resultados e empatia.
+          </p>
+          <p>
+            Acreditamos na inovação como uma forma de gerar impacto para o
+            mundo, valorizando as histórias e transformações de cada marca.
+          </p>
+          <p>
+            Sabemos que para se fazer mais, é preciso ir além de ideias,
+            apresentações e anúncios. É preciso ser mais.
+          </p>
+          <h3>3mais. Mais relevância e mais legado.</h3>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="social">
-                <p>Siga a gente:</p>
-                <div class="social-links">
-                    <a href="#"><img src="img/facebook.svg" alt="Facebook" /></a>
-                    <a href="#"><img src="img/instagram.svg" alt="Instagram" /></a>
-                    <a href="#"><img src="img/linkedin.svg" alt="Linkedin" /></a>
-                </div>
-            </div>
-            <div class="copy">
-                <img src="img/3mais.svg" alt="Logo 3mais" />
-                <p>© 2023 Todos Direitos Reservados.</p>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <form action="#apirdstation" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu Nome" required aria-label="Nome" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Ex: jonh@email.com" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Por favor, insira um endereço de e-mail válido. Ex: nome@dominio.com" />
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" placeholder="DDD + Telefone" required
+          onkeyup="formatarCelular(this)" />
+
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Insira o Assunto" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva o texto" required></textarea>
+
+        <!-- Campos ocultos para identificação do formulário e autenticação -->
+        <input type="hidden" name="token_rdstation" value="SUA_CHAVE_PUBLICA" />
+        <input type="hidden" name="identificador" value="IDENTIFICADOR_DO_FORMULARIO" />
+
+        <button type="submit" aria-label="Enviar formulário de contato">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="social">
+        <p>Siga a gente:</p>
+        <div class="social-links">
+          <a href="#"><img src="img/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="img/instagram.svg" alt="Instagram" /></a>
+          <a href="#"><img src="img/linkedin.svg" alt="Linkedin" /></a>
         </div>
-    </footer>
+      </div>
+      <div class="copy">
+        <img src="img/3mais.svg" alt="Logo 3mais" />
+        <p>© 2023 Todos Direitos Reservados.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
